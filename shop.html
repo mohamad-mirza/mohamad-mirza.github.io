@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Mohammad Mirza-Mohammadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>O</h1>
+<h2>My Jewelry Designs Ready to Ship!</h2>
+
+  <h3>Lava Earrings</h3>
+  <div class="item">
+    <div class="item-inner">
+      <div class="item-inner-content">
+         <img src="images/01lava.jpg" width="100%" alt="Earrings inspired by molten metal">
+      </div>
+      <div class="item-inner-price">120$</div>
+      <div class="item-inner-detail">Detail</div>
+    </div>
+  </div>
+  <div class="button-holder">
+    <button class="add" onclick="addItem(this, 'Lava Earrings', 120)">Add To Cart</button>
+  </div>
+
+  <h3>Angel VS Evil Earrings</h3>
+  <div class="item">
+    <div class="item-inner">
+      <div class="item-inner-content">
+         <img src="images/02_Angel_and_Evil_Earrings.jpg" width="100%" alt="Evil VS Angel Earrings">
+      </div>
+      <div class="item-inner-price">120$</div>
+      <div class="item-inner-detail">Detail</div>
+    </div>
+  </div>
+  <div class="button-holder">
+    <button class="add" onclick="addItem(this, 'Angel VS Evil Earrings', 120)">Add To Cart</button>
+  </div>
+
+  <h3>Rose Flower Ring</h3>
+  <div class="item">
+    <div class="item-inner">
+      <div class="item-inner-content">
+         <img src="images/03_Rose_Ring.jpg" width="100%" alt="Rose Flower Ring">
+      </div>
+      <div class="item-inner-price">120$</div>
+      <div class="item-inner-detail">Detail</div>
+    </div>
+  </div>
+  <div class="button-holder">
+    <button class="add" onclick="addItem(this, 'Rose Flower Ring', 120)">Add To Cart</button>
+  </div>
+
+  <h3>Twisted Heart Earrings</h3>
+  <div class="item">
+    <div class="item-inner">
+      <div class="item-inner-content">
+         <img src="images/04_Heart_Ring.jpg" width="100%" alt="Twisted Heart Ring">
+      </div>
+      <div class="item-inner-price">120$</div>
+      <div class="item-inner-detail">Detail</div>
+    </div>
+  </div>
+  <div class="button-holder">
+    <button class="add" onclick="addItem(this, 'Twisted Heart Earrings', 120)">Add To Cart</button>
+  </div>
+
+  <h3>Ribbed Heart Earrings</h3>
+  <div class="item">
+    <div class="item-inner">
+      <div class="item-inner-content">
+         <img src="images/05_Heart_Earrings.jpg" width="100%" alt="Earrings inspired by molten metal">
+      </div>
+      <div class="item-inner-price">120$</div>
+      <div class="item-inner-detail">Detail</div>
+    </div>
+  </div>
+  <div class="button-holder">
+    <button class="add" onclick="addItem(this, 'Ribbed Heart Earrings', 120)">Add To Cart</button>
+  </div>
+
+
+<div style="text-align: right">
+<h2>Cart Total: <span id="total">0</span>$</h2>
+</div>
+<script>
+  var total = document.getElementById("total");
+  var totalValue = 0;
+  function addItem(button, name, price) {
+      button.disabled = true;
+      totalValue = totalValue + price;
+      total.textContent = totalValue;
+  }
+</script>
+</body>
+</html>
