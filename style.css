@@ -54,10 +54,10 @@
   transform: rotateY(180deg);
 }
 
-.flip-card-back a {
+.flip-card-back {
   margin: 0;
- font-size: 50pt;
- color: yellow;
+ font-size: 40pt;
+ color: whitesmoke;
 }
 
 .item {
